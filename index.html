@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5b21b6">
+  <title>AULA DIGITAL · Talleres tecnológicos</title>
+  <meta name="description" content="Reserva tu plaza en talleres prácticos de HTML y CSS, UX/UI e Inteligencia Artificial.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="AULA DIGITAL, inicio">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>AULA <strong>DIGITAL</strong></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menú</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="menu-principal" class="nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#talleres">Talleres</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+        <a class="button button-small" href="#reserva">Reservar plaza</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Formación tecnológica práctica</p>
+          <h1>Aprende. Crea. <span>Conecta.</span></h1>
+          <p>Talleres tecnológicos presenciales para convertir ideas en proyectos reales, paso a paso y con acompañamiento.</p>
+          <div class="hero-actions">
+            <a class="button" href="#talleres">Ver talleres</a>
+            <a class="text-link" href="#como-funciona">Descubre cómo funciona →</a>
+          </div>
+          <ul class="hero-stats" aria-label="Datos de la academia">
+            <li><strong>12+</strong><span>años creando</span></li>
+            <li><strong>320</strong><span>alumnos al año</span></li>
+            <li><strong>4.9/5</strong><span>valoración media</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustración abstracta de tecnología">
+          <div class="code-window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <div class="code-line"><b>&lt;h1&gt;</b> Aprende <b>&lt;/h1&gt;</b></div>
+            <div class="code-line"><b>.idea</b> { crea: <em>realidad</em>; }</div>
+            <div class="code-line"><b>while</b> (creciendo) { conecta(); }</div>
+          </div>
+          <span class="floating-badge badge-one">HTML</span>
+          <span class="floating-badge badge-two">UX/UI</span>
+          <span class="floating-badge badge-three">IA</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="talleres" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Elige tu próximo reto</p>
+            <h2>Talleres disponibles</h2>
+          </div>
+          <p>Aprendizaje práctico en grupos reducidos.</p>
+        </div>
+
+        <div class="cards-grid" id="workshops">
+          <article class="workshop-card" data-id="html-css" tabindex="0">
+            <span class="selected-badge" hidden>✓ Seleccionado</span>
+            <div class="card-icon icon-html" aria-hidden="true">&lt;/&gt;</div>
+            <span class="card-level">Principiante</span>
+            <h3>HTML y CSS</h3>
+            <p>Aprende a crear páginas web modernas, accesibles y adaptables desde cero.</p>
+            <dl class="card-info">
+              <div><dt>Fecha</dt><dd>12/12/2026</dd></div>
+              <div><dt>Duración</dt><dd>8 horas</dd></div>
+            </dl>
+            <div class="spots" data-spots="html-css"><strong>8</strong> plazas disponibles</div>
+            <button class="button button-card choose-workshop" type="button">Elegir taller</button>
+          </article>
+
+          <article class="workshop-card" data-id="ux-ui" tabindex="0">
+            <span class="selected-badge" hidden>✓ Seleccionado</span>
+            <div class="card-icon icon-ux" aria-hidden="true">◉</div>
+            <span class="card-level">Todos los niveles</span>
+            <h3>Diseño UX/UI</h3>
+            <p>Diseña interfaces atractivas y fáciles de utilizar mediante un proceso real.</p>
+            <dl class="card-info">
+              <div><dt>Fecha</dt><dd>19/12/2026</dd></div>
+              <div><dt>Duración</dt><dd>6 horas</dd></div>
+            </dl>
+            <div class="spots" data-spots="ux-ui"><strong>5</strong> plazas disponibles</div>
+            <button class="button button-card choose-workshop" type="button">Elegir taller</button>
+          </article>
+
+          <article class="workshop-card" data-id="ia" tabindex="0">
+            <span class="selected-badge" hidden>✓ Seleccionado</span>
+            <div class="card-icon icon-ai" aria-hidden="true">✦</div>
+            <span class="card-level">Práctico</span>
+            <h3>Inteligencia Artificial</h3>
+            <p>Descubre herramientas de IA y aprende a aplicarlas en proyectos cotidianos.</p>
+            <dl class="card-info">
+              <div><dt>Fecha</dt><dd>16/01/2027</dd></div>
+              <div><dt>Duración</dt><dd>5 horas</dd></div>
+            </dl>
+            <div class="spots" data-spots="ia"><strong>10</strong> plazas disponibles</div>
+            <button class="button button-card choose-workshop" type="button">Elegir taller</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserva" class="section reservation-section">
+      <div class="container reservation-grid">
+        <div class="form-panel">
+          <p class="eyebrow">Reserva tu plaza</p>
+          <h2>Completa tus datos</h2>
+
+          <div class="progress-wrap" aria-label="Progreso del formulario">
+            <div class="progress-label"><span>Progreso</span><strong id="progress-text">0%</strong></div>
+            <div class="progress-track"><div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div></div>
+          </div>
+
+          <form id="reservation-form" novalidate>
+            <div class="field">
+              <label for="name">Nombre y apellidos <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Ej.: Ana García" required minlength="3">
+              <p class="field-message" id="name-message" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="ana@email.com" required>
+              <p class="field-message" id="email-message" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="workshop">Taller seleccionado <span aria-hidden="true">*</span></label>
+              <select id="workshop" name="workshop" required>
+                <option value="">Selecciona un taller</option>
+                <option value="html-css">HTML y CSS — 12/12/2026</option>
+                <option value="ux-ui">Diseño UX/UI — 19/12/2026</option>
+                <option value="ia">Inteligencia Artificial — 16/01/2027</option>
+              </select>
+              <p class="field-message" id="workshop-message" aria-live="polite"></p>
+            </div>
+
+            <div class="field checkbox-field">
+              <input id="privacy" name="privacy" type="checkbox" required>
+              <label for="privacy">He leído y acepto la política de privacidad <span aria-hidden="true">*</span></label>
+              <p class="field-message" id="privacy-message" aria-live="polite"></p>
+            </div>
+
+            <button class="button button-submit" type="submit">Confirmar reserva</button>
+            <p class="privacy-note">Tus datos se guardan únicamente en este navegador con fines demostrativos.</p>
+          </form>
+        </div>
+
+        <aside class="aside-summary" aria-label="Resumen de reserva">
+          <h3>Tu próximo taller</h3>
+          <div id="summary-empty" class="summary-empty">
+            <span aria-hidden="true">◇</span>
+            <p>Selecciona un taller para ver aquí el resumen.</p>
+          </div>
+          <div id="summary-content" class="summary-content" hidden>
+            <span id="summary-icon" class="summary-icon" aria-hidden="true"></span>
+            <h4 id="summary-title"></h4>
+            <p id="summary-date"></p>
+            <p id="summary-duration"></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <div class="section-heading centered">
+          <div><p class="eyebrow">Aprender haciendo</p><h2>¿Cómo funciona?</h2></div>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><h3>Elige tu taller</h3><p>Explora el catálogo y selecciona el tema que más te motive.</p></li>
+          <li><span>2</span><h3>Reserva tu plaza</h3><p>Completa el formulario y verifica que tus datos sean correctos.</p></li>
+          <li><span>3</span><h3>Empieza a crear</h3><p>Acude al taller y participa en una experiencia práctica.</p></li>
+        </ol>
+
+        <div class="learning-grid">
+          <article class="tip-card">
+            <p class="eyebrow">¿Sabías que?</p>
+            <h2>Consejos rápidos</h2>
+            <div class="tip-content" aria-live="polite">
+              <span id="tip-icon" aria-hidden="true">&lt;/&gt;</span>
+              <h3 id="tip-title">HTML</h3>
+              <p id="tip-text">Usar etiquetas semánticas mejora la estructura y la accesibilidad.</p>
+            </div>
+            <button id="next-tip" class="button button-secondary" type="button">Siguiente consejo</button>
+          </article>
+
+          <article class="quiz-card">
+            <p class="eyebrow">Pon a prueba tus conocimientos</p>
+            <h2>Mini cuestionario</h2>
+            <div id="quiz-question"></div>
+            <div id="quiz-options" class="quiz-options"></div>
+            <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+            <button id="quiz-next" class="button button-secondary" type="button" hidden>Siguiente pregunta</button>
+            <p id="quiz-score" class="quiz-score"></p>
+          </article>
+        </div>
+
+        <article class="simulator" aria-label="Simulador responsive">
+          <div>
+            <p class="eyebrow">Diseño responsive</p>
+            <h2>Prueba el simulador</h2>
+            <p>Cambia la vista para comprobar cómo se adapta una página.</p>
+            <div class="device-buttons" role="group" aria-label="Cambiar vista de previsualización">
+              <button class="device-button active" type="button" data-view="desktop" aria-pressed="true">Vista ordenador</button>
+              <button class="device-button" type="button" data-view="mobile" aria-pressed="false">Vista móvil</button>
+            </div>
+          </div>
+          <div class="device desktop" id="device-preview">
+            <div class="device-screen">
+              <div class="mock-nav"><b>AULA</b><span></span><span></span><span></span></div>
+              <div class="mock-layout">
+                <div><i></i><i></i><i></i></div>
+                <aside></aside>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact section">
+      <div class="container contact-wrap">
+        <div><p class="eyebrow">¿Necesitas ayuda?</p><h2>Conversemos</h2></div>
+        <a class="button" href="mailto:hola@auladigital.es">hola@auladigital.es</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="success-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="success-title" hidden>
+    <div class="modal-content">
+      <div class="success-icon" aria-hidden="true">✓</div>
+      <p class="eyebrow">Reserva registrada</p>
+      <h2 id="success-title">¡Reserva realizada correctamente!</h2>
+      <p><strong id="success-name"></strong>, tu plaza está confirmada.</p>
+      <dl class="success-summary">
+        <div><dt>Taller</dt><dd id="success-workshop"></dd></div>
+        <div><dt>Fecha</dt><dd id="success-date"></dd></div>
+      </dl>
+      <p class="local-note">Esta reserva se guarda localmente en tu navegador.</p>
+      <button id="another-reservation" class="button" type="button">Realizar otra reserva</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container"><p>© 2026 AULA DIGITAL — Talleres tecnológicos</p><a href="#inicio">Volver arriba ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
